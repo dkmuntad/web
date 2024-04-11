@@ -2078,12 +2078,17 @@ section {
   background-position: center;
 }
 
+.team .nav-pills{
+  justify-content: space-between;
+}
+
 .team .nav-item button.active{
   background: var(--color-primary);
 }
-
 .team .nav-item button{
   color: var(--color-secondary-light);
+  font-size: 12px;
+
 }
 .team .row h4 {
   font-weight: 400;
