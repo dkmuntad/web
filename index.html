@@ -2577,57 +2577,57 @@
           </div>
 
           <div class="col-lg-8">
-            <form method="post" role="form" class="php-email-form">
+            <form id="contact-form" method="post" role="form" class="php-email-form">
               <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="text" name="nim" class="form-control" id="nim" placeholder="NIM/Stambuk" required>
-                </div>
-
+                  <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group">
+                      <input type="text" name="nim" class="form-control" id="nim" placeholder="NIM/Stambuk" required>
+                  </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-            <script>
+          </form>
+          <script>
               document.getElementById("contact-form").addEventListener("submit", function (event) {
                   event.preventDefault();
-      
+          
                   // Form data
                   let formData = new FormData(this);
                   let name = formData.get("name");
                   let nim = formData.get("nim");
                   let subject = formData.get("subject");
                   let message = formData.get("message");
-      
+          
                   // Format pesan WhatsApp
                   let whatsappMessage = "[" + subject + "]\nNAMA : " + name + "\nNIM : " + nim + "\n\n" + message + "\n\n(pesan ini dikirim dari website DKM UNTAD)";
-      
+          
                   // Nomor WhatsApp tujuan
                   let phoneNumber = "6282122322587";
-      
+          
                   // URL WhatsApp Click to Chat
                   let whatsappUrl = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodeURIComponent(whatsappMessage);
-      
+          
                   // Buka link WhatsApp Click to Chat
                   window.open(whatsappUrl);
-      
+          
                   // Tampilkan pesan sukses
                   let sentMessage = document.querySelector(".sent-message");
                   sentMessage.style.display = "block";
               });
           </script>
+          
           </div><!-- End Contact Form -->
 
         </div>
