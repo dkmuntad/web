@@ -1067,6 +1067,8 @@ section {
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
   height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .featured-services .service-item .icon {
