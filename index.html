@@ -1919,17 +1919,20 @@
         </div>
         
         <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            var lazyloadTabs = document.querySelectorAll('.lazyload');
-            lazyloadTabs.forEach(function(tab) {
-              tab.addEventListener('shown.bs.tab', function() {
-                if (!tab.classList.contains('loaded')) {
-                  // Tambahkan logika atau kode untuk memuat konten tab secara lazy
-                  tab.classList.add('loaded');
+          function lazyLoadContent(tab) {
+            var targetId = tab.getAttribute('data-bs-target').substring(1);
+            var targetContent = document.getElementById(targetId);
+            if (targetContent && !targetContent.classList.contains('loaded')) {
+              var tabsContent = document.querySelectorAll('.tab-pane');
+              tabsContent.forEach(function(content) {
+                if (content.id === targetId) {
+                  content.classList.add('loaded');
+                } else {
+                  content.classList.remove('show', 'active');
                 }
               });
-            });
-          });          
+            }
+          }                  
         </script>
 
 
