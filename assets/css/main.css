@@ -608,6 +608,55 @@ section {
   }
 }
 
+
+.bgAnimation{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+  grid-template-rows: repeat(auto-fit,minmax(50px,1fr));
+  background: white;
+  filter: saturate(2);
+  overflow: hidden;
+}
+
+.colorBox{
+  z-index: 2;
+  filter: brightness(1.1);
+  transition: 2s ease;
+  position: relative;
+  margin: 2px;
+  background: white;
+}
+
+.colorBox:hover{
+  background: var(--color-primary);
+  transition-duration: 1ms;
+}
+
+.backgroundAmim{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(var(--color-primary-rgb), 0.6);
+  filter: blur(60px);
+  animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+  0%{
+      top: -60px;
+  }
+  100%{
+      top: 120%;
+  }
+}
+
 .hero-animated .btn-get-started {
   font-size: 16px;
   font-weight: 400;
@@ -672,6 +721,7 @@ section {
 
   100% {
     transform: translateY(-10px);
+    
   }
 }
 

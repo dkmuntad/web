@@ -84,6 +84,20 @@
   </header><!-- End Header -->
 
   <section id="hero-animated" class="hero-animated d-flex align-items-center">
+    <div class="bgAnimation" id="bgAnimation">
+      <div class="backgroundAmim">
+          
+      </div>
+    </div>
+    <script>
+      const bgAnimation = document.getElementById('bgAnimation');
+      const numberOfColorBoxes = 400;
+      for (let i = 0; i < numberOfColorBoxes; i++) {
+          const colorBox = document.createElement('div');
+          colorBox.classList.add('colorBox');
+          bgAnimation.append(colorBox)
+      }
+    </script>
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
       <img src="assets/img/hero baru.png" class="img-fluid animated">
       <h2><span>Duta Kampus Merdeka Universitas Tadulako</span></h2>
@@ -1708,7 +1722,7 @@
                   </div>
                   <div class="member-info">
                     <div class="social">
-                      <a href="https://www.instagram.com/putrabasyarewan"><i class="bi bi-instagram"></i></a>
+                      <a href="https://www.instagram.com/putra_basyarewan"><i class="bi bi-instagram"></i></a>
                     </div>
                     <h4>Eko Saputra N. Basyarewan</h4>
 
