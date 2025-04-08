@@ -1970,6 +1970,77 @@
       </div>
     </section><!-- End F.A.Q Section -->
 
+    <!-- Tutorial Section -->
+    <section class="tutorial">
+      <h3>Video Tutorial SITAMPAN</h3>
+      <p>
+        Kumpulan Video Tutorial dari proses yang sering ditanyakan
+      </p>
+      <div class="swiper-container init-swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <iframe width="93%" height="300" src="https://www.youtube.com/embed/cykejl-YAFE?si=y510TjENaHvidQEK" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                  <iframe width="93%" height="300" src="https://www.youtube.com/embed/akA5dL-q4wU?si=b1XQwfDC8j12rGmd" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                  <iframe width="93%" height="300" src="https://www.youtube.com/embed/U3FzOxgtias?si=Wg2a8_uOMQgzCfXr" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe width="93%" height="300" src="https://www.youtube.com/embed/_s0VeOnT0M4?si=4Z51wkzaHkak4ugK" allowfullscreen></iframe>
+              </div>
+              <div class="swiper-slide">
+                <iframe width="93%" height="300" src="https://www.youtube.com/embed/627qoPO8I4g?si=hAviStTntj8u85q5" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+  </section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          var swiper = new Swiper(".init-swiper", {
+              loop: true,
+              speed: 600,
+              effect: "coverflow",
+              autoplay: {
+                  delay: 5000,
+              },
+              slidesPerView: 3,
+              spaceBetween: 20,
+              centeredSlides: true,
+              pagination: {
+                  el: ".swiper-pagination",
+                  type: "bullets",
+                  clickable: true
+              },
+              navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev"
+              },
+              breakpoints: {
+                  320: {
+                      slidesPerView: 1,
+                      spaceBetween: 10
+                  },
+                  768: {
+                      slidesPerView: 2,
+                      spaceBetween: 20
+                  },
+                  1024: {
+                      slidesPerView: 3,
+                      spaceBetween: 20
+                  }
+              }
+          });
+      });
+  </script>
+    
+
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio" data-aos="fade-up">
 
@@ -2217,6 +2288,8 @@
 
     </section>
     -->
+
+    
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">

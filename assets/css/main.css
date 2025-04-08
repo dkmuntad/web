@@ -2299,6 +2299,88 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Recent tutorial Posts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Gallery Section
+--------------------------------------------------------------*/
+.tutorial {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.tutorial .swiper-container {
+  overflow: hidden;
+}
+
+.tutorial .swiper-wrapper {
+  height: auto;
+}
+
+.tutorial .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tutorial .swiper-slide-active {
+  transform: scale(1.1);
+  border: 6px solid var(--accent-color);
+  border-radius: 25px;
+}
+
+.tutorial .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tutorial .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--background-color);
+  border: 1px solid var(--accent-color);
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.tutorial .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+.tutorial .swiper-button-next,
+.tutorial .swiper-button-prev {
+  color: var(--accent-color);
+}
+
+.tutorial .swiper-button-next:hover,
+.tutorial .swiper-button-prev:hover {
+  background: var(--accent-color);
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+iframe {
+  border-radius: 15px;
+}
+
+@media (min-width: 992px) {
+  .tutorial .swiper-wrapper {
+    padding: 60px 0;
+  }
+
+  .tutorial .swiper-slide-active {
+    background: var(--background-color);
+    border: 6px solid var(--accent-color);
+    padding: 4px;
+    z-index: 1;
+    transform: scale(1.1);
+    border-radius: 25px;
+    transition: none;
+  }
+}
+
+/*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
 .contact .map {
