@@ -2307,7 +2307,8 @@ section {
 .tutorial {
   text-align: center;
   background: rgba(var(--color-secondary-rgb), 0.04);
-
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .tutorial h3 {
@@ -2448,7 +2449,6 @@ iframe {
   }
 
   .tutorial .swiper-slide-active {
-    background: var(--background-color);
     border: 6px solid var(--accent-color);
     padding: 4px;
     z-index: 1;
