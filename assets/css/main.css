@@ -2345,7 +2345,7 @@ section {
 }
 
 .tutorial .swiper-pagination .swiper-pagination-bullet {
-  background-color: var(--background-color);
+  background-color: white;
   border: 1px solid var(--accent-color);
   width: 12px;
   height: 12px;
@@ -2353,7 +2353,7 @@ section {
 }
 
 .tutorial .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
+  background-color: var(--color-primary);
 }
 
 .tutorial .swiper-button-next,
@@ -2363,7 +2363,7 @@ section {
 
 .tutorial .swiper-button-next:hover,
 .tutorial .swiper-button-prev:hover {
-  background: var(--accent-color);
+  background: var(--color-primary-light);
   color: white;
   border-radius: 50%;
   padding: 5px;
